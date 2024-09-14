@@ -1,0 +1,38 @@
+/* Estilo para el Navbar */
+.custom-navbar {
+  background-color: #1a1f36;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+/* Estilo para los items de navegación */
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* Estilo para los botones de navegación */
+.custom-nav-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  border-radius: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Agregar margen para separar los botones */
+.navbar-nav .nav-item {
+  margin: 0 1rem; /* Ajusta este valor para aumentar o disminuir el espacio */
+}
+
+/* Estilo para el hover y focus de los botones */
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+  color: #007bff;
+  transform: scale(1.1);
+  outline: none;
+}
