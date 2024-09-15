@@ -1,118 +1,80 @@
-/* AboutMe.css */
-
 .aboutme-container {
-  max-width: 900px; /* Tamaño reducido del contenedor */
-  margin: 5rem auto; /* Aumenta el margen superior a 5rem */
-  padding: 1.5rem; /* Padding interno */
-  background-color: #283d52;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem; /* Padding reducido */
+  background-color: #f5f5f5; /* Fondo gris muy claro */
+  margin-top: 100px;
 }
 
-.aboutme-container h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-  text-align: center;
+.aboutme-box {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.aboutme-content {
+.dashboard-section {
+  margin: 1.5rem 0; /* Margen vertical reducido */
+}
+
+.dashboard-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem; /* Margen inferior reducido */
+  color: #212529; /* Color de texto oscuro */
+}
+
+.skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
-.aboutme-section {
-  flex: 1 1 30%;
-  color: black;
-  min-width: 250px;
-  background-color: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.aboutme-section h3 {
-  font-size: 1.75rem;
-  color: #007bff;
-  margin-bottom: 1rem;
-}
-
-.aboutme-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.aboutme-section li {
-  margin-bottom: 1rem;
-  font-size: 15px;
-}
-
-.aboutme-section strong {
-  font-size: 1.2rem;
-  color: #333;
+  gap: 0.5rem; /* Espacio reducido entre ítems */
 }
 
 .skills-list li {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem; /* Padding reducido */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 0.5rem); /* Tres ítems por fila */
+  font-size: 0.875rem;
 }
 
 .skill-icon {
-  width: 24px; /* Ajusta el tamaño según sea necesario */
-  height: 24px; /* Ajusta el tamaño según sea necesario */
+  width: 25px; /* Tamaño reducido */
+  height: auto;
   margin-right: 0.5rem;
-}
-
-.experience-section {
-  padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.experience-section h3 {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 .experience-list {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Espacio reducido entre tarjetas */
 }
 
 .experience-card {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 0.25rem;
+  padding: 0.75rem; /* Padding reducido */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 0.5rem); /* Dos tarjetas por fila */
+  margin-top: 0.75rem; /* Margen superior reducido */
 }
 
 .experience-card h2 {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .experience-card h5 {
-  font-size: 1.25rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: #6c757d; /* Color de texto secundario */
 }
 
 .experience-card h6 {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 1rem;
+  font-size: 0.6875rem;
+  margin-bottom: 0.5rem;
+  color: #495057; /* Color de texto */
 }
 
 .experience-card p {
-  font-size: 1rem;
-  color: #333;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #212529; /* Color del texto */
 }

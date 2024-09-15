@@ -1,81 +1,68 @@
 import React from "react";
 import "../assets/styles/about.css";
-import "../assets/images/html.png";
+import htmlIcon from "../assets/images/html.png";
+import javaIcon from "../assets/images/java.png";
+import kotlinIcon from "../assets/images/kotlin.png";
+import javascriptIcon from "../assets/images/javascript.png";
+import reactIcon from "../assets/images/react.png";
+import springBootIcon from "../assets/images/spring-boot.png";
+import gitIcon from "../assets/images/git.png";
 
 export const AboutPort = () => {
   return (
-    <div className="aboutme-container">
-      <div className="aboutme-content">
-        <section className="aboutme-section">
+    <div className="aboutme-container container">
+      <div className="aboutme-box row">
+        <section className="dashboard-section col-12">
           <h3>Formación</h3>
-          <ul>
+          <ul className="list-unstyled">
             <li>
               <strong>Sistemas Microinformáticos y Redes</strong>
               <br />
-              Me enfoca en diseñar, implementar y mantener sistemas informáticos
+              Me enfoco en diseñar, implementar y mantener sistemas informáticos
               y redes de computadoras a pequeña escala, asegurando la eficiencia
               y seguridad en la administración de hardware, software y servicios
               relacionados.
             </li>
-
-            <br />
             <li>
               <strong>Desarrollo de Aplicaciones Web</strong>
               <br />
-              Me centre en el desarrollo y mantenimiento de aplicaciones web,
+              Me centro en el desarrollo y mantenimiento de aplicaciones web,
               incluyendo el diseño de interfaces, la programación del lado del
               servidor y del cliente, y la gestión de bases de datos.
             </li>
-            {/* Añade más elementos de lista según sea necesario */}
           </ul>
         </section>
 
-        <section className="aboutme-section">
+        <section className="dashboard-section col-12">
           <h3>Habilidades</h3>
           <ul className="skills-list">
             <li>
-              <img
-                src="../assets/images/html.png"
-                alt="HTML y CSS"
-                className="skill-icon"
-              />
+              <img src={htmlIcon} alt="HTML y CSS" className="skill-icon" />
               HTML y CSS
             </li>
             <li>
-              <img
-                src="../assets/images/java.png"
-                alt="Java"
-                className="skill-icon"
-              />
+              <img src={javaIcon} alt="Java" className="skill-icon" />
               Java
             </li>
             <li>
-              <img
-                src="/images/kotlin.png"
-                alt="Kotlin"
-                className="skill-icon"
-              />
+              <img src={kotlinIcon} alt="Kotlin" className="skill-icon" />
               Kotlin
             </li>
             <li>
               <img
-                src="/images/javascript.png"
+                src={javascriptIcon}
                 alt="JavaScript"
                 className="skill-icon"
               />
               JavaScript
             </li>
             <li>
-              <img
-                src="/images/react.png"
-                alt="React JS"
-                className="skill-icon"
-              />
+              <img src={reactIcon} alt="React JS" className="skill-icon" />
               React JS
             </li>
             <li>
               <img
-                src="/images/spring-boot.png"
+                src={springBootIcon}
                 alt="Spring Boot"
                 className="skill-icon"
               />
@@ -83,7 +70,7 @@ export const AboutPort = () => {
             </li>
             <li>
               <img
-                src="/images/git.png"
+                src={gitIcon}
                 alt="Git y Control de Versiones"
                 className="skill-icon"
               />
@@ -92,7 +79,7 @@ export const AboutPort = () => {
           </ul>
         </section>
 
-        <section className="experience-section">
+        <section className="dashboard-section col-12">
           <h3>Experiencia</h3>
           <div className="experience-list">
             <div className="experience-card">
@@ -122,7 +109,7 @@ export const AboutPort = () => {
                 Proyectos con Angular, API REST y Spring Boot. Desarrollé
                 aplicaciones web con Angular, implementé API REST para
                 comunicación eficiente, y desplegué microservicios con Spring
-                Boot
+                Boot.
               </p>
             </div>
           </div>

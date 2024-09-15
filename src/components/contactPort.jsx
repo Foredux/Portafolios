@@ -9,7 +9,7 @@ const ContactPort = () => {
         Puedes ponerte en contacto conmigo a través de los siguientes enlaces:
       </p>
       <div className="contact-grid">
-        <a href="edustp18@gmail.com" className="contact-button">
+        <a href="mailto:edustp18@gmail.com" className="contact-button">
           <span className="contact-icon">📧</span>
           Correo Electrónico
         </a>
@@ -31,7 +31,7 @@ const ContactPort = () => {
           <span className="contact-icon">🐙</span>
           GitHub
         </a>
-        <a href="/src/assets/CV.pdf" download className="contact-button">
+        <a href="../assets/CV.pdf" download className="contact-button">
           <span className="contact-icon">📄</span>
           Currículum
         </a>
