@@ -1,12 +1,18 @@
 /* Estilo para el Navbar */
 .custom-navbar {
-  background-color: #2c3e50;
+  background: linear-gradient(
+    120deg,
+    #2c3e50,
+    /* Color de inicio del degradado */ #3498db,
+    /* Primer tono de azul */ #2980b9 /* Segundo tono de azul */
+  );
   width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
   padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .navbar-nav {
@@ -32,7 +38,7 @@
 
 .custom-nav-link:hover,
 .custom-nav-link:focus {
-  color: #3498db;
+  color: #000000;
   transform: scale(1.05);
   outline: none;
 }

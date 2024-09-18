@@ -13,7 +13,7 @@ const HeaderPort = ({ setCurrentView }) => {
               className="nav-link custom-nav-link"
               aria-label="Inicio"
             >
-              Inicio
+              Home
             </button>
           </li>
           <li className="nav-item">
@@ -22,7 +22,7 @@ const HeaderPort = ({ setCurrentView }) => {
               className="nav-link custom-nav-link"
               aria-label="Acerca de"
             >
-              Acerca de mi
+              About
             </button>
           </li>
           <li className="nav-item">
@@ -31,7 +31,7 @@ const HeaderPort = ({ setCurrentView }) => {
               className="nav-link custom-nav-link"
               aria-label="Contacto"
             >
-              Contacto
+              Contact
             </button>
           </li>
         </ul>

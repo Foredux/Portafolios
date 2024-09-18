@@ -23,7 +23,7 @@ const ContactPort = () => {
           LinkedIn
         </a>
         <a
-          href="https://github.com/tu-usuario"
+          href="https://github.com/Foredux"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-button"
@@ -31,7 +31,12 @@ const ContactPort = () => {
           <span className="contact-icon">🐙</span>
           GitHub
         </a>
-        <a href="../assets/CV.pdf" download className="contact-button">
+        <a
+          href="/assets/images/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-button"
+        >
           <span className="contact-icon">📄</span>
           Currículum
         </a>

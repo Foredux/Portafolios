@@ -1,80 +1,139 @@
 .aboutme-container {
-  padding: 1rem; /* Padding reducido */
-  background-color: #f5f5f5; /* Fondo gris muy claro */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
   margin-top: 100px;
+  border-radius: 2px;
+  margin-bottom: 40px;
 }
 
 .aboutme-box {
-  max-width: 960px;
-  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 20px;
 }
 
 .dashboard-section {
-  margin: 1.5rem 0; /* Margen vertical reducido */
+  margin-bottom: 3rem;
 }
 
-.dashboard-section h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem; /* Margen inferior reducido */
-  color: #212529; /* Color de texto oscuro */
+.section-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  font-size: 10px;
+}
+
+.education-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.education-card h3 {
+  color: #2980b9;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem; /* Espacio reducido entre ítems */
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
 }
 
-.skills-list li {
+.skill-item {
   display: flex;
   align-items: center;
-  background-color: #ffffff; /* Fondo blanco */
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem; /* Padding reducido */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33.333% - 0.5rem); /* Tres ítems por fila */
-  font-size: 0.875rem;
+  background-color: #f1f1f1;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
 }
 
 .skill-icon {
-  width: 25px; /* Tamaño reducido */
-  height: auto;
+  width: 24px;
+  height: 24px;
   margin-right: 0.5rem;
 }
 
 .experience-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem; /* Espacio reducido entre tarjetas */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 .experience-card {
-  background-color: #ffffff; /* Fondo blanco */
-  border-radius: 0.25rem;
-  padding: 0.75rem; /* Padding reducido */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(50% - 0.5rem); /* Dos tarjetas por fila */
-  margin-top: 0.75rem; /* Margen superior reducido */
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.5rem;
 }
 
-.experience-card h2 {
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.company {
+  color: #7f8c8d;
+  font-style: italic;
   font-size: 1rem;
+}
+
+.experience-period {
+  color: #3498db;
+  font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.experience-card h5 {
-  font-size: 0.75rem;
-  color: #6c757d; /* Color de texto secundario */
+.experience-description {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
 
-.experience-card h6 {
-  font-size: 0.6875rem;
-  margin-bottom: 0.5rem;
-  color: #495057; /* Color de texto */
+@media (max-width: 768px) {
+  .aboutme-container {
+    padding: 1rem;
+    margin-top: 50px;
+  }
+
+  .education-cards,
+  .experience-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
 
-.experience-card p {
-  font-size: 0.75rem;
-  line-height: 1.4;
-  color: #212529; /* Color del texto */
+p {
+  font-size: 1.2rem;
 }
