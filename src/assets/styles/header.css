@@ -42,3 +42,12 @@
   transform: scale(1.05);
   outline: none;
 }
+
+/* Establece el cuerpo de la página para tener una altura mínima de 100vh */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
