@@ -1,35 +1,11 @@
-import React, { useState } from "react";
-import { HomePort } from "./components/homePort";
-import ContactPort from "./components/contactPort";
-import AboutPort from "./components/aboutPort";
-import HeaderPort from "./components/headerPort";
-import FooterPort from "./components/footerPort"; // Importa el footer
+import { MisRutas } from "./router/MisRutas";
 
-const App = () => {
-  const [currentView, setCurrentView] = useState("homePort");
-
-  const ViewComponent = () => {
-    switch (currentView) {
-      case "homePort":
-        return <HomePort />;
-      case "contactPort":
-        return <ContactPort />;
-      case "aboutPort":
-        return <AboutPort />;
-      default:
-        return <HomePort />;
-    }
-  };
-
+function App() {
   return (
-    <div className="App">
-      <HeaderPort setCurrentView={setCurrentView} />
-      <div className="content-container">
-        <header className="App-header">{ViewComponent()}</header>
-      </div>
-      <FooterPort /> {/* Footer siempre al final */}
+    <div className="layout">
+      <MisRutas></MisRutas>
     </div>
   );
-};
+}
 
 export default App;
