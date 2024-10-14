@@ -1,14 +1,14 @@
 export const Servicios = () => {
   return (
-    <div className="page">
-      <h1 className="heading">Servicios</h1>
-      <section className="services">
+    <div className="servicios-container">
+      <h1>Servicios</h1>
+      <section className="servicios-section">
         <article className="service">
           <h2>Desarrollo de Sitios Web</h2>
           <p>
             Creo sitios web personalizados utilizando tecnologías modernas como
-            React, Node.js, HTML5, y CSS3. Me enfoco en una experiencia de
-            usuario fluida y en garantizar que cada sitio sea completamente
+            React, Angular, Node.js, HTML5, y CSS3. Me enfoco en una experiencia
+            de usuario fluida y en garantizar que cada sitio sea completamente
             responsivo y optimizado.
           </p>
         </article>

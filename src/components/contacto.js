@@ -2,10 +2,10 @@ import React from "react";
 
 export const Contacto = () => {
   return (
-    <div className="page">
-      <h1 className="heading">Contacto</h1>
+    <div className="contact-container">
+      <h1>Contacto</h1>
 
-      <form className="contact" action="mailto:edustp18@gmail.com">
+      <form className="contact-form" action="mailto:edustp18@gmail.com">
         <input
           type="text"
           id="nombre"
@@ -16,7 +16,7 @@ export const Contacto = () => {
 
         <input
           type="text"
-          id="Apellidos"
+          id="apellidos"
           name="apellidos"
           required
           placeholder="Apellidos"
