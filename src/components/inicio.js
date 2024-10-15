@@ -17,17 +17,36 @@ export const Inicio = () => {
             proyectos web
           </h1>
           <h2>
-            Te ayudo a crear tu sitio o aplicación web, tener más visibilidad y
-            relevancia en internet.
+            Me especializo en desarrollar aplicaciones web que transforman ideas
+            en realidades digitales efectivas.
           </h2>
-          <a
-            href="/CV_Eduardo_Rodriguez_Castellano.pdf"
-            download
-            target="_blank"
-            className="download-btn"
-          >
-            Descargar Currículum
-          </a>
+
+          <div className="button-container">
+            <a
+              href="/CV_Eduardo_Rodriguez_Castellano.pdf"
+              download
+              target="_blank"
+              className="btn btn-download"
+            >
+              Currículum
+            </a>
+            <a
+              href="https://www.linkedin.com/in/eduardo-jes%C3%BAs-rodr%C3%ADguez-castellano-aa791820b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-linkedin"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Foredux"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-github"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </div>
