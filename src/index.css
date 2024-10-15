@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 255, 255);
+  background-color: #151515;
 }
 
 code {
@@ -26,7 +26,7 @@ code {
   justify-content: center;
   align-items: center;
   list-style: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);
   margin-bottom: 35px;
   position: relative;
 }
@@ -38,6 +38,7 @@ code {
 .header .logo {
   flex-grow: 2;
   display: flex;
+  color: white;
 }
 
 .header .logo span {
@@ -72,14 +73,14 @@ code {
 }
 
 .header li a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 300ms;
 }
 
 .header .active,
 .header a:hover {
-  color: #fa4529;
+  color: #5f9ea0;
 }
 
 /* Estilo para el ícono del menú en dispositivos móviles */
@@ -124,7 +125,7 @@ code {
   }
 
   .header nav ul li a:hover {
-    color: #fa4529;
+    color: #5f9ea0;
   }
 
   .header nav.show ul {
@@ -149,6 +150,7 @@ code {
 
   .header .logo {
     justify-content: space-between;
+    color: white;
   }
 
   .menu-icon {
@@ -156,6 +158,7 @@ code {
     font-size: 28px;
     cursor: pointer;
     margin-right: 20px;
+    color: white;
   }
 }
 
@@ -170,7 +173,7 @@ code {
   margin-top: 80px;
   min-height: 100px;
   line-height: 100px;
-  color: rgba(0, 0, 0, 0.7); /* Gris oscuro con opacidad del 70% */
+  color: rgba(255, 255, 255, 0.7); /* Gris oscuro con opacidad del 70% */
 }
 
 /* Estilos específicos para la página Home */
@@ -182,31 +185,32 @@ code {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 40px;
+  color: #ffffff;
   margin-bottom: 0px;
   margin-top: 50px;
 }
 
 .home strong {
-  color: #fa4529;
+  color: #5f9ea0;
 }
 
 .home h2 {
-  color: rgb(92, 91, 91);
+  color: rgb(173, 169, 169);
   font-weight: lighter;
 }
 
 .home a {
   padding: 7px;
   border-radius: 5px;
-  background-color: #fa4529;
+  background-color: #5f9ea0;
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: all 300ms;
 }
 
 .home a:hover {
-  background-color: rgb(145, 228, 145);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Nuevos estilos para la imagen y el layout */
@@ -220,11 +224,11 @@ code {
 }
 
 .profile-image {
-  width: 200px; /* Ancho deseado */
-  height: 300px; /* Alto deseado */
-  border-radius: 5px; /* Esquinas ligeramente redondeadas */
-  object-fit: cover; /* Mantiene la relación de aspecto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .home-text {
@@ -236,7 +240,7 @@ code {
 .home .heading {
   font-size: 40px;
   font-weight: lighter;
-  color: black;
+  color: rgb(255, 252, 252);
   margin-bottom: 0px;
 }
 
@@ -244,148 +248,86 @@ code {
   color: rgb(92, 91, 91);
 }
 
-/* Estilo del botón de descarga */
-.download-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: white;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Efecto hover en el botón */
-.download-btn:hover {
-  background-color: #0056b3;
-}
-
 /* Contacto */
 /* Estilo general del contenedor de contacto */
+
+/* contacto.css */
 .contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 500px;
-  font-weight: lighter;
   margin: 20px auto;
+  padding: 30px;
+  background-color: #5f9ea0;
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo del encabezado */
-.contact-container h1 {
+.contact-title {
   font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: lighter;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
 }
 
-/* Estilo del formulario */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.inputBox {
+  position: relative;
+  margin-bottom: 15px;
 }
 
-/* Estilo de los campos de entrada */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.inputField,
+.textAreaField {
   width: 100%;
   padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #000000;
+  border-radius: 2px;
   font-size: 1em;
+  margin-bottom: 20px;
+
   box-sizing: border-box;
+  transition: border-color 0.2s;
 }
 
-/* Efecto de enfoque en los campos de entrada */
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-  border-color: #ca6a33;
+.inputField:focus,
+.textAreaField:focus {
+  border-color: #645bff;
   outline: none;
 }
 
-/* Estilo del textarea */
-.contact-form textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-/* Estilo del botón de envío */
-
-.cta {
-  position: relative;
-  margin: auto;
-
-  padding: 11.5px 18px;
-  transition: all 0.2s ease;
-  border: 3px solid #552da8;
-  border-radius: 50px;
-  background: #552da8;
-  cursor: pointer;
-}
-
-.cta:before {
-  content: "";
+.inputLabel {
   position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  border-radius: 50px;
-  background: white;
-  width: 45px;
-  height: 45px;
-  transition: all 0.8s ease;
+  left: 12px;
+  top: 50%;
+  padding-bottom: 20px;
+  transform: translateY(-50%);
+  font-size: 0.9em;
+  color: #999;
+  transition: all 0.2s;
+  pointer-events: none;
 }
 
-.cta span {
-  position: relative;
-  font-family: Montserrat;
-  font-size: 18px;
-  padding-right: 20px;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+.inputField:focus ~ .inputLabel,
+.inputField:not(:placeholder-shown) ~ .inputLabel,
+.textAreaField:focus ~ .inputLabel,
+.textAreaField:not(:placeholder-shown) ~ .inputLabel {
+  top: -10px;
+  font-size: 0.8em;
+  color: #000000;
 }
 
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: white;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.5s ease;
+.submitButton {
+  background-color: #000000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s;
 }
 
-.cta:hover:before {
-  width: 100%;
-  background: #1c1c1c;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-  transition: all 2s ease;
-}
-
-.cta:active {
-  transform: scale(0.95);
-  transition: all 2s ease;
+.submitButton:hover {
+  background-color: #3b6061;
 }
 
 /* Estilo para el componente Servicios */
@@ -393,7 +335,7 @@ code {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
   font-weight: lighter;
 }
 
@@ -406,24 +348,26 @@ code {
 }
 
 .service {
-  background-color: #f8f9fa;
+  background-color: #5f9ea0;
   border-radius: 3px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 300px;
   text-align: center;
+
   flex: 1 1 250px;
 }
 
 .service h2 {
   font-size: 24px;
-  color: #fa4529;
+  color: #000000;
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .service p {
   font-size: 18px;
-  color: #555;
+  color: #ffffff;
   line-height: 1.5;
 }
 
@@ -441,55 +385,62 @@ code {
 
 /* Estilos para Sobre Mi*/
 .curriculum {
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 30px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #444;
+  background-color: #eef2f3;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 900px;
+  font-family: "Roboto", sans-serif;
+}
+
+.curriculum article {
+  flex: 1 1 300px; /* Mínimo ancho de las tarjetas */
   background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.curriculum article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .curriculum h2 {
-  font-size: 26px;
-  margin-top: 30px;
+  font-size: 1.5em;
+  color: #2c3e50;
   margin-bottom: 15px;
-  border-bottom: 2px solid #fa4529;
+  font-weight: 600;
+  border-bottom: 3px solid #3498db;
   padding-bottom: 5px;
-  text-align: left;
-  font-weight: lighter;
 }
 
 .curriculum ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
 .curriculum li {
-  margin-bottom: 10px;
-  padding: 12px;
-  border-left: 5px solid #fa4529;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s ease;
-  border-radius: 4px;
+  font-size: 1em;
+  color: #34495e;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 25px;
 }
 
-.curriculum li:hover {
-  background-color: #ececec;
-}
-
-@media (min-width: 1024px) {
-  .curriculum {
-    padding: 40px;
-  }
-
-  .curriculum h2 {
-    font-size: 28px;
-  }
-
-  .curriculum li {
-    padding: 15px;
-  }
+.curriculum li::before {
+  content: "✓"; /* Marca de verificación */
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.2em;
+  top: 0;
 }
