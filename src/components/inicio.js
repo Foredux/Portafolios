@@ -20,6 +20,14 @@ export const Inicio = () => {
             Te ayudo a crear tu sitio o aplicación web, tener más visibilidad y
             relevancia en internet.
           </h2>
+          <a
+            href="/CV_Eduardo_Rodriguez_Castellano.pdf"
+            download
+            target="_blank"
+            className="download-btn"
+          >
+            Descargar Currículum
+          </a>
         </div>
       </div>
     </div>

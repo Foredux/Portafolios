@@ -244,46 +244,148 @@ code {
   color: rgb(92, 91, 91);
 }
 
-/* Contacto */
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: "Arial", sans-serif;
-  color: #333;
+/* Estilo del botón de descarga */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Efecto hover en el botón */
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contacto */
+/* Estilo general del contenedor de contacto */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  font-weight: lighter;
+  margin: 20px auto;
+}
+
+/* Estilo del encabezado */
 .contact-container h1 {
-  font-size: 28px;
+  font-size: 2em;
   margin-bottom: 20px;
-  text-align: center;
+  color: #333;
   font-weight: lighter;
 }
 
+/* Estilo del formulario */
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.contact-form input,
+/* Estilo de los campos de entrada */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
+  width: 100%;
+  padding: 12px;
   margin-bottom: 15px;
-  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
-.contact-form input[type="submit"] {
-  background-color: #fa4529;
-  color: white;
-  border: none;
+/* Efecto de enfoque en los campos de entrada */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #ca6a33;
+  outline: none;
+}
+
+/* Estilo del textarea */
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Estilo del botón de envío */
+
+.cta {
+  position: relative;
+  margin: auto;
+
+  padding: 11.5px 18px;
+  transition: all 0.2s ease;
+  border: 3px solid #552da8;
+  border-radius: 50px;
+  background: #552da8;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.contact-form input[type="submit"]:hover {
-  background-color: #e03e25;
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 50px;
+  background: white;
+  width: 45px;
+  height: 45px;
+  transition: all 0.8s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 18px;
+  padding-right: 20px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  transition: all 2s ease;
+}
+
+.cta:active {
+  transform: scale(0.95);
+  transition: all 2s ease;
 }
 
 /* Estilo para el componente Servicios */
