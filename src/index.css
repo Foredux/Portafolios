@@ -179,15 +179,16 @@ code {
 /* Estilos específicos para la página Home */
 .home {
   text-align: center;
+  padding: 20px;
 }
 
 .home h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 32px;
   color: #ffffff;
-  margin-bottom: 0px;
-  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .home strong {
@@ -197,6 +198,7 @@ code {
 .home h2 {
   color: rgb(173, 169, 169);
   font-weight: lighter;
+  font-size: 18px;
 }
 
 .button-container {
@@ -233,6 +235,28 @@ code {
 
 .btn:hover {
   filter: brightness(90%);
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home h2 {
+    font-size: 16px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
 /* Nuevos estilos para la imagen y el layout */
