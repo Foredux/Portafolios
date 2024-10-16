@@ -398,7 +398,7 @@ code {
 .service {
   background-color: #5f9ea0;
   border-radius: 3px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   padding: 20px;
   max-width: 300px;
   text-align: center;
@@ -433,62 +433,66 @@ code {
 
 /* Estilos para Sobre Mi*/
 .curriculum {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-  background-color: #829296;
-  border-radius: 2px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  max-width: 900px;
-  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
 }
 
 .curriculum article {
-  flex: 1 1 300px; /* Mínimo ancho de las tarjetas */
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.curriculum article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
 }
 
 .curriculum h2 {
-  font-size: 1.5em;
-  color: #2c3e50;
-  margin-bottom: 15px;
-  font-weight: 600;
-  border-bottom: 3px solid #3498db;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5f9ea0;
+  border-bottom: 2px solid #5f9ea0;
   padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .curriculum ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .curriculum li {
-  font-size: 1em;
-  color: #34495e;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #c0c0c0;
+  margin-bottom: 8px;
   position: relative;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
-.curriculum li::before {
-  content: "✓"; /* Marca de verificación */
+.curriculum li:before {
+  content: "";
   position: absolute;
   left: 0;
-  color: #3498db;
-  font-weight: bold;
-  font-size: 1.2em;
-  top: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #5f9ea0;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .curriculum {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .curriculum h2 {
+    font-size: 20px;
+  }
+
+  .curriculum li {
+    font-size: 14px;
+  }
 }
