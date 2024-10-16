@@ -37,6 +37,8 @@ export const Curriculum = () => {
           <li>Java</li>
           <li>JavaScript</li>
           <li>React JS</li>
+          <li>Angular</li>
+          <li>TypeScript</li>
           <li>Spring Boot</li>
           <li>Git y Control de Versiones</li>
         </ul>
