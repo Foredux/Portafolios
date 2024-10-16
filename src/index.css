@@ -310,9 +310,8 @@ code {
 
 .contact-title {
   font-size: 2em;
-  font-weight: lighter;
   text-align: center;
-
+  font-weight: 600;
   color: #000000;
   margin-bottom: 40px;
 }
@@ -365,6 +364,7 @@ code {
 .submitButton {
   background-color: #000000;
   color: #fff;
+  width: 100%;
   padding: 12px;
   border: none;
   border-radius: 5px;
